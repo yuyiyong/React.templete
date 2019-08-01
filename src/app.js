@@ -4,18 +4,28 @@ const app = () => {
 }
 export default app;*/
 import React from "react";
-import styles from './app.css'
-// import './app.css'
+//import styles from './app11.css'
+import './app.css';
+import Demo from './demo.js'
+import './app11.less'
+
 
 class  App extends React.Component {
     constructor(props){
         super(props);
     }
+
     render() {
+        this.haha();
         // className='title'
         return (
-            <div className={styles.title}>表白任素汐！</div>
+            <div className='title'><p>表白任素汐！!!</p>
+            <Demo/>
+            </div>
         )
     }
+   /* fn = () => {
+        console.log("haha");
+    }*/
 }
 export default App;
